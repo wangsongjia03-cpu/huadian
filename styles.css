@@ -145,10 +145,10 @@ h2 {
 .card-stage {
   display: flex;
   justify-content: center;
-  padding: 12px 0 6px;
+  padding: 0;
   overflow: hidden;
-  border-radius: 16px;
-  background: linear-gradient(145deg, #edf4fa, #f8fbfd);
+  border-radius: 0;
+  background: transparent;
 }
 
 .card-preview {
