@@ -1,6 +1,11 @@
 (() => {
   'use strict'
-
+  const POLAROID = {
+  x: 128,
+  y: 240,
+  width: 972,
+  height: 1254
+}
   const CARD = { width: 1228, height: 1608 }
   const ASSET_OFFSET_Y = -90
   const PHOTO = { x: 190, y: 360, width: 858, height: 840 }
@@ -410,7 +415,20 @@
       ctx.fillStyle = '#fff'
       ctx.fillRect(0, 0, CARD.width, CARD.height)
       ctx.drawImage(state.assets.background, 0, ASSET_OFFSET_Y)
-
+      // 拍立得白卡和立体阴影
+ctx.save()
+ctx.shadowColor = 'rgba(37, 50, 64, 0.22)'
+ctx.shadowBlur = 32
+ctx.shadowOffsetX = 0
+ctx.shadowOffsetY = 20
+ctx.fillStyle = '#ffffff'
+ctx.fillRect(
+  POLAROID.x,
+  POLAROID.y,
+  POLAROID.width,
+  POLAROID.height
+)
+ctx.restore()
       ctx.fillStyle = '#fff'
       ctx.fillRect(MAT.x, MAT.y, MAT.width, MAT.height)
 
