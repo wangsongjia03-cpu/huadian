@@ -152,6 +152,16 @@ h2 {
 }
 
 .card-preview {
+  position: relative;
+  width: min(100%, 650px);
+  aspect-ratio: 1228 / 1608;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(13, 43, 88, 0.14);
+  user-select: none;
+}
+
+.card-preview::before {
   content: "";
   position: absolute;
   z-index: 1;
