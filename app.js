@@ -3,7 +3,7 @@
 
   const CARD = { width: 1228, height: 1608 }
   const ASSET_OFFSET_Y = -90
-  const POLAROID = { x: 122, y: 237, width: 985, height: 1254 }
+  const POLAROID = { x: 122, y: 237, width: 985, height: 1320 }
   const PHOTO = { x: 190, y: 360, width: 858, height: 840 }
   const MAT = { x: 213, y: 449, width: 802, height: 560 }
   const TEXT = {
