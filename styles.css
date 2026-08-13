@@ -152,13 +152,19 @@ h2 {
 }
 
 .card-preview {
-  position: relative;
-  width: min(100%, 650px);
-  aspect-ratio: 1228 / 1608;
-  overflow: hidden;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 10.423%;
+  top: 14.925%;
+  width: 79.153%;
+  height: 77.985%;
   background: #fff;
-  box-shadow: 0 10px 28px rgba(13, 43, 88, 0.14);
-  user-select: none;
+  box-shadow:
+    0 calc(20px * var(--card-scale))
+    calc(32px * var(--card-scale))
+    rgba(37, 50, 64, 0.22);
+  pointer-events: none;
 }
 
 .card-layer {
